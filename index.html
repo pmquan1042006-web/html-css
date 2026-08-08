@@ -1,39 +1,216 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="vi">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan Burger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-      <nav>
-        <h2>QuanWeb</h2>
-        <input type="checkbox" id="menu" />
-        <label for="menu" class="hamburger">&#9776;</label>
-        <ul>
-          <li><a href="#">Trang chủ</a></li>
-          <li><a href="#">Giới thiệu</a></li>
-          <li><a href="#">Sản phẩm</a></li>
-          <li><a href="#">Liên hệ</a></li>
-        </ul>
-      </nav>
+        <nav class="navbar">
+            <h2 class="logo">Quan Burger</h2>
+            <input type="checkbox" id="menu">
+            <label for="menu" class="hamburger">☰</label>
+            <ul class="menu">
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Khuyến mãi</a></li>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
-      <section class="hero">
-        <div class="left">
-          <h1>Thiết kế Web bằng HTML và CSS</h1>
-          <p>Landing Page sau khi học HTML và CSS.</p>
-          <button>Bắt đầu</button>
-        </div>
-        <div class="right">
-          <img src="images/hamburger.jpg" alt="hamburger" />
-        </div>
-      </section>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Hamburger ngon<br>cho ngày tuyệt vời!!!</h1>
+                <p>
+                    Những chiếc hamburger được làm từ nguyên liệu
+                    tươi ngon, phù hợp cho một bữa ăn nhanh và tiện lợi.
+                </p>
+                <button>Xem menu</button>
+            </div>
+            <div class="hero-image">
+                <img src="images/burger.jpg" alt="Hamburger">
+            </div>
+        </section>
+        <section class="products">
+            <h2>Hamburger được yêu thích</h2>
+            <p class="section-text">
+                Một số món được khách hàng lựa chọn nhiều nhất.
+            </p>
+            <div class="product-list">
+                <div class="card">
+                    <img src="images/burger1.jpg" alt="Hamburger bò">
+                    <h3>Classic Burger</h3>
+                    <p>
+                        Thịt bò, rau xà lách, cà chua và sốt đặc biệt.
+                    </p>
+                    <h4>59.000đ</h4>
+                    <button>Đặt món</button>
+                </div>
+                <div class="card">
+                    <img src="images/burger2.jpg" alt="Hamburger phô mai">
+                    <h3>Cheese Burger</h3>
+                    <p>
+                        Hamburger bò kết hợp cùng phô mai béo ngậy.
+                    </p>
+                    <h4>69.000đ</h4>
+                    <button>Đặt món</button>
+                </div>
+                <div class="card">
+                    <img src="images/burger3.jpg" alt="Hamburger gà">
+                    <h3>Chicken Burger</h3>
+                    <p>
+                        Thịt gà giòn, rau xanh và nước sốt thơm ngon.
+                    </p>
+                    <h4>65.000đ</h4>
+                    <button>Đặt món</button>
+                </div>
+            </div>
+        </section>
+        <section class="gallery-section">
+            <h2>Hình ảnh cửa hàng</h2>
+            <div class="gallery">
+                <img src="images/gallery1.jpg" alt="Hamburger 1">
+                <img src="images/gallery2.jpg" alt="Hamburger 2">
+                <img src="images/gallery3.jpg" alt="Hamburger 3">
+                <img src="images/gallery4.jpg" alt="Hamburger 4">
+                <img src="images/gallery5.jpg" alt="Hamburger 5">
+                <img src="images/gallery6.jpg" alt="Hamburger 6">
+            </div>
+          </section>
+        <section class="dashboard">
+            <aside class="sidebar">
+                <h2>Quản lý</h2>
+                <ul>
+                    <li>Trang tổng quan</li>
+                    <li>Đơn hàng</li>
+                    <li>Sản phẩm</li>
+                    <li>Khách hàng</li>
+                </ul>
+            </aside>
+            <div class="dashboard-content">
+                <h2>Dashboard cửa hàng</h2>
+                <div class="dashboard-list">
+                    <div class="dashboard-box">
+                        <h3>120</h3>
+                        <p>Đơn hàng</p>
+                    </div>
+                    <div class="dashboard-box">
+                        <h3>85</h3>
+                        <p>Khách hàng</p>
+                    </div>
+                    <div class="dashboard-box">
+                        <h3>25</h3>
+                        <p>Sản phẩm</p>
+                    </div>
+                </div>
+            </div>
+          </section>
+        <section class="register">
+            <h2>Đăng ký nhận ưu đãi</h2>
+            <form>
+                <label for="name">Họ và tên</label>
+                <input type="text" id="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <label for="phone">Số điện thoại</label>
+                <input type="text" id="phone" required>
+                <label>
+                    <input type="checkbox" required>
+                    Tôi đồng ý nhận thông tin khuyến mãi
+                </label>
+                <button type="submit">Đăng ký</button>
+            </form>
+          </sectioin>
+        <section class="pricing">
+            <h2>Combo hamburger</h2>
+            <div class="price-list">
+                <div class="price-box">
+                    <h3>Combo Nhỏ</h3>
+                    <h4>79.000đ</h4>
+                    <p>1 Hamburger</p>
+                    <p>1 Nước ngọt</p>
+                    <p>1 Khoai tây</p>
+                    <button>Chọn combo</button>
+                </div>
+                <div class="price-box popular">
+                    <h3>Combo Vừa</h3>
+                    <h4>99.000đ</h4>
+                    <p>1 Hamburger</p>
+                    <p>1 Nước ngọt</p>
+                    <p>1 Khoai tây lớn</p>
+                    <button>Chọn combo</button>
+                </div>
+                <div class="price-box">
+                    <h3>Combo Lớn</h3>
+                    <h4>129.000đ</h4>
+                    <p>2 Hamburger</p>
+                    <p>2 Nước ngọt</p>
+                    <p>1 Khoai tây lớn</p>
+                    <button>Chọn combo</button>
+                </div>
+            </div>
+        </section>
+        <section class="modal-demo">
+            <h2>Đặt hamburger ngay</h2>
+            <input type="checkbox" id="open-modal">
+            <label for="open-modal" class="open-button">
+                Mở cửa sổ đặt món
+            </label>
+            <div class="modal">
+                <div class="modal-content">
+                    <h2>Đặt món</h2>
+                    <p>
+                        Cảm ơn bạn đã lựa chọn Quan Burger!
+                    </p>
+                    <button>Đặt hàng</button>
+                    <label for="open-modal" class="close-button">
+                        Đóng
+                    </label>
+                </div>
+            </div>
+          </section>
+        <section class="timeline-section">
+            <h2>Quá trình làm hamburger</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>01. Chuẩn bị</h3>
+                    <p>
+                        Chuẩn bị bánh mì, thịt bò, rau và các nguyên liệu.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>02. Nướng thịt</h3>
+                    <p>
+                        Thịt được nướng và chuẩn bị theo từng đơn hàng.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>03. Làm hamburger</h3>
+                    <p>
+                        Kết hợp bánh, thịt, rau và nước sốt.
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <h3>04. Giao hàng</h3>
+                    <p>
+                        Đóng gói và chuẩn bị giao đến khách hàng.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-      <p>Demo QuanWeb</p>
+        <h3>Quan Burger</h3>
+        <p>
+            Hamburger ngon, đơn giản, dễ ăn.
+        </p>
+        <p>
+            Quan Burger
+        </p>
     </footer>
-  </body>
+</body>
 </html>
